@@ -6,9 +6,11 @@
 ul {
   list-style: none;
   margin-top: 20px;
-  margin-left: 10%:
+  margin-left: 6%;
   padding: 0;
   display: inline-block;
+  margin-right: 0;
+  padding-right:0
 }
 
 li {
@@ -32,16 +34,17 @@ a {
   letter-spacing: 3px;
 }
 
-#left {
+.left {
   float: left;
 }
-
+.right{
+  float: right;
+}
 #cart {
-  margin-left:13%;
+  margin-left: 274px;;
   height: 55px;
   width: 55px;
-  float: right;
-  margin-right:10%;
+  margin-right:6%;
   padding: 10px 10px 10px 10px;
   border-width:0 0 0 0;
   background-size:100px;
