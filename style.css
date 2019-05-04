@@ -10,7 +10,7 @@ ul {
   padding: 0;
   display: inline-block;
   margin-right: 0;
-  padding-right:0
+  padding-right: 0
 }
 
 li {
@@ -37,23 +37,26 @@ a {
 .left {
   float: left;
 }
-.right{
+
+.right {
   float: right;
 }
+
 #cart {
-  margin-left: 265px;;
+  margin-left: 265px;
+  ;
   height: 55px;
   width: 55px;
-  margin-right:6%;
+  margin-right: 6%;
   padding: 10px 10px 10px 10px;
-  border-width:0 0 0 0;
-  background-size:100px;
+  border-width: 0 0 0 0;
+  background-size: 100px;
 }
 
 #cart:hover {
   background-color: lightgrey;
   border-radius: 40px;
-  background-size:100px;
+  background-size: 100px;
 }
 
 .image {
@@ -89,5 +92,26 @@ p {
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+#display-area {
+  color: white;
+}
+
+.card {
+  background-color: white;
+  width: 20%;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  margin: 30px 15px 20px 15px;
+  opacity: .85;
+  vertical-align: top;
+}
+
+.poster {
+  max-width: 80%;
+  margin: 0 auto;
 }
 }
