@@ -1,3 +1,13 @@
+
+@font-face {
+font-family: "wingdings";
+src: url(wingdings.ttf)
+
+}
+
+
+
+
 #logo {
   height: 90px;
   width: 75px;
@@ -124,7 +134,14 @@ hr{
   width:80%;
   text-align: center;
 }
-
+#demlogo{
+  text-align: center;
+}
+.dem{
+  color:darkred;
+  font-family:"wingdings";
+  text-align:left;
+}
 
 
 

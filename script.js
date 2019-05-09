@@ -40,7 +40,8 @@ $(document).ready(function() {
     },
   ]
   for (let i = 0; i < products.length; i++) {
-    let mContent = `<div class="card">
+    let mContent = `
+    <div class="card">
   <p class="stuff">${products[i]["product"]}</p>
   <img src=${products[i]["image"]} class="poster">
   <p class="stuff">${products[i]["price"]}</p>
@@ -53,13 +54,20 @@ $(document).ready(function() {
 let points = 0
 $("#logo").click(function() {
   points++;
-  console.log(points)
-})
-setTimeout(function() {
-  if (points >= 3) {
+  console.log(points);
+  if (points >= 6) {
     $("body").empty()
-    let newElement = `<embed src="dark.mp3" width="0" height="0" loop="infinite" autostart="true" hidden="true" />`
-    $("body").append(newElement)
-  }
+    let newElement = `<embed src="dark.mp3" width="0" height="0" loop="infinite" autostart="true" hidden="true" />
+    <div id="demlogo">
+    <img src="images/demLogo.png" width="100px" height="100px">
+    </div>
+    <p class="dem">.ztgc a zgnc uj xknzus xaue zut so zah .zo uj z'tuj yrroq mtoqusy</p>
+    <div id="demlogo">
+    <img src="images/demon.png">
+    </div>
+    `
 
-}, 10000);
+    $("body").append(newElement)
+    $("body").css({"background-color":"black"});
+  }
+})
