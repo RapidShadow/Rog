@@ -44,7 +44,8 @@ $(document).ready(function() {
     <div class="card">
   <p class="stuff">${products[i]["product"]}</p>
   <img src=${products[i]["image"]} class="poster">
-  <p class="stuff">${products[i]["price"]}</p>
+  <p class="stuff">${products[i]["price"]}<p>
+  <p class="stuff">SOLD OUT<p>
 </div>`
     console.log(mContent);
     $("#display-area").append(mContent);
@@ -68,6 +69,8 @@ $("#logo").click(function() {
     `
 
     $("body").append(newElement)
-    $("body").css({"background-color":"black"});
+    $("body").css({
+      "background-color": "black"
+    });
   }
 })

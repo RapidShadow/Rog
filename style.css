@@ -7,7 +7,7 @@ src: url(wingdings.ttf)
 
 
 
-
+/* Index Stuff */
 #logo {
   height: 90px;
   width: 75px;
@@ -103,11 +103,12 @@ p {
   margin-left: 20%;
   margin-right: 20%;
 }
-
+/* Shop stuff */
 #display-area {
   background-color:white;
   text-align: center;
   margin-bottom: -30px;
+  margin-top: 30px;
 }
 
 .card {
@@ -117,7 +118,7 @@ p {
   text-align: center;
   padding: 10px;
   display: inline-block;
-  margin: 30px 15px 20px 15px;
+  margin: 40px 20px 40px 20px;
   opacity: .85;
   vertical-align: top;
 }
@@ -127,13 +128,15 @@ p {
   margin: 0 auto;
 }
 .stuff{
-  text-align: center
+  text-align: center;
+  font-family:"rubik"
 }
 hr{
   margin-top:30px;
   width:80%;
   text-align: center;
 }
+/* Demon Stuff */
 #demlogo{
   text-align: center;
 }
@@ -141,16 +144,4 @@ hr{
   color:darkred;
   font-family:"wingdings";
   text-align:left;
-}
-
-
-
-
-
-
-
-
-
-
-
 }
