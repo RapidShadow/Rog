@@ -98,3 +98,10 @@ a {
   border-radius: 40px;
   background-size: 100px;
 }
+#demlogo{
+  text-align: center;
+}
+.dem{
+  color:darkred;
+  font-family:"wingdings";
+  text-align:center;

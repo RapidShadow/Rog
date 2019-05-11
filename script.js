@@ -34,10 +34,31 @@ $(document).ready(function() {
       price: "$8.00"
     },
     {
-      product: "Wealches",
-      image: "images/wealches.png",
+      product: "Welches",
+      image: "images/welches.png",
       price: "$8.00"
     },
+    {
+      product: "Cotton Candy",
+      image: "images/candy.png",
+      price: "$8.00"
+    },
+    {
+      product: "Sweet Mint",
+      image: "images/mint.png",
+      price: "$8.00"
+    },
+    {
+      product: "Mango",
+      image: "images/mango.png",
+      price: "$8.00"
+    }
+
+
+
+
+
+
   ]
   for (let i = 0; i < products.length; i++) {
     let mContent = `
