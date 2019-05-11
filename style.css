@@ -129,6 +129,7 @@ p {
 }
 .stuff{
   text-align: center;
+  font-variant: small-caps;
   font-family:"rubik"
 }
 hr{

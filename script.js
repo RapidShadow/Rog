@@ -2,56 +2,73 @@ $(document).ready(function() {
   let products = [{
       product: "Original",
       image: "images/original.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     }, {
       product: "Blueberry",
       image: "images/blueberry.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Strawberry",
       image: "images/strawberry.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Orange",
       image: "images/orange.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Grape",
       image: "images/grape.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Fruit Punch",
       image: "images/punch.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Lemonade",
       image: "images/lemonade.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Welches",
       image: "images/welches.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Cotton Candy",
       image: "images/candy.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
       product: "Sweet Mint",
       image: "images/mint.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
     },
     {
-      product: "Mango",
+      product: "Mucho Mango",
       image: "images/mango.png",
-      price: "$8.00"
+      price: "$8.00",
+      status: "sold out"
+    },
+    {
+      product: "Krispies Tendies",
+      image: "images/chicken.png",
+      price: "$8.00",
+      status: "coming soon"
     }
 
 
@@ -66,7 +83,7 @@ $(document).ready(function() {
   <p class="stuff">${products[i]["product"]}</p>
   <img src=${products[i]["image"]} class="poster">
   <p class="stuff">${products[i]["price"]}<p>
-  <p class="stuff">SOLD OUT<p>
+  <p class="stuff">${products[i]["status"]}<p>
 </div>`
     console.log(mContent);
     $("#display-area").append(mContent);
