@@ -1,71 +1,71 @@
 $(document).ready(function() {
   let products = [{
-      product: "Original",
+      product: "original",
       image: "images/original.png",
       price: "$8.00",
       status: "sold out"
     }, {
-      product: "Blueberry",
+      product: "blueberry",
       image: "images/blueberry.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Strawberry",
+      product: "strawberry",
       image: "images/strawberry.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Orange",
+      product: "orange",
       image: "images/orange.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Grape",
+      product: "grape",
       image: "images/grape.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Fruit Punch",
+      product: "fruit punch",
       image: "images/punch.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Lemonade",
+      product: "lemonade",
       image: "images/lemonade.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Welches",
+      product: "welches",
       image: "images/welches.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Cotton Candy",
+      product: "cotton candy",
       image: "images/candy.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Sweet Mint",
+      product: "sweet mint",
       image: "images/mint.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Mucho Mango",
+      product: "mucho mango",
       image: "images/mango.png",
       price: "$8.00",
       status: "sold out"
     },
     {
-      product: "Krispies Tendies",
+      product: "krispies tendies",
       image: "images/chicken.png",
       price: "$8.00",
       status: "coming soon"
@@ -79,9 +79,9 @@ $(document).ready(function() {
   ]
   for (let i = 0; i < products.length; i++) {
     let mContent = `
-    <div class="card">
+    <div class="card" id="${products[i]["product"]}">
   <p class="stuff">${products[i]["product"]}</p>
-  <img src=${products[i]["image"]} class="poster">
+  <img src=${products[i]["image"]} class="poster" >
   <p class="stuff">${products[i]["price"]}<p>
   <p class="stuff">${products[i]["status"]}<p>
 </div>`
@@ -96,11 +96,11 @@ $("#logo").click(function() {
   console.log(points);
   if (points >= 6) {
     $("body").empty()
-    let newElement = `<embed src="dark.mp3" width="0" height="0" loop="infinite" autostart="true" hidden="true" />
+    let newElement = `<embed src="dark.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
     <div id="demlogo">
     <img src="images/demLogo.png" width="100px" height="100px">
     </div>
-    <p class="dem">.ztgc a zgnc uj xknzus xaue zut so zah .zo uj z'tuj yrroq mtoqusy</p>
+    <p class="dem">Smoking kills bro, but im not your mother so do what you want.</p>
     <div id="demlogo">
     <img src="images/demon.png">
     </div>
@@ -111,4 +111,10 @@ $("#logo").click(function() {
       "background-color": "black"
     });
   }
+
+
+
+
+
+
 })

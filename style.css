@@ -1,11 +1,7 @@
-
 @font-face {
-font-family: "wingdings";
-src: url(wingdings.ttf)
-
+  font-family: "wingdings";
+  src: url(wingdings.ttf)
 }
-
-
 
 /* Index Stuff */
 #logo {
@@ -54,19 +50,19 @@ a {
 
 #cart {
   margin-left: 265px;
-  ;
-  height: 55px;
-  width: 55px;
+  height: 35px;
+  width: 35px;
   margin-right: 6%;
-  padding: 10px 10px 10px 10px;
-  border-width: 0 0 0 0;
+  padding: 15px 15px 15px 15px;
   background-size: 100px;
+  margin-top:0px;
 }
 
 #cart:hover {
   background-color: lightgrey;
-  border-radius: 40px;
+  border-radius: 20px;
   background-size: 100px;
+
 }
 
 .image {
@@ -103,16 +99,17 @@ p {
   margin-left: 20%;
   margin-right: 20%;
 }
+
 /* Shop stuff */
 #display-area {
-  background-color:white;
+  background-color: white;
   text-align: center;
   margin-bottom: -30px;
   margin-top: 30px;
 }
 
 .card {
-  background-color:white;
+  background-color: white;
   width: 20%;
   color: black;
   text-align: center;
@@ -127,22 +124,43 @@ p {
   max-width: 80%;
   margin: 0 auto;
 }
-.stuff{
+
+.stuff {
   text-align: center;
   font-variant: small-caps;
-  font-family:"rubik"
+  font-family: "rubik"
 }
-hr{
-  margin-top:30px;
-  width:80%;
+
+hr {
+  margin-top: 30px;
+  width: 80%;
+  text-align: center;
+}
+#copyright{
   text-align: center;
 }
 /* Demon Stuff */
-#demlogo{
+#demlogo {
   text-align: center;
 }
-.dem{
-  color:darkred;
-  font-family:"wingdings";
-  text-align:left;
+
+.dem {
+  color: darkred;
+  font-family: "wingdings";
+  text-align: left;
+}
+/*Contact page*/
+h2{
+  font-family: "Montserrat";
+  text-align: left;
+  margin-left:8%
+}
+#questions{
+  margin:30px 0 30px 5%;
+  font-size:60px;
+  text-align: center;
+}
+.contacts{
+  margin:30px 0 30px 0;
+  text-align:center;
 }

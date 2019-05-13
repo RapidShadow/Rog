@@ -20,22 +20,17 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:white;
-  font-family:"Montserrat";
+  color: white;
+  font-family: "Montserrat";
 }
 
 .hero-text a {
   border-style: solid;
-  border-color:white;
+  border-color: white;
   display: inline-block;
   padding: 10px 25px;
-  color:white;
-  text-align: center;
-}
-
-.hero-text button:hover {
-  background-color: #555;
   color: white;
+  text-align: center;
 }
 
 #logo {
@@ -84,24 +79,26 @@ a {
 
 #cart {
   margin-left: 265px;
-  ;
-  height: 55px;
-  width: 55px;
+  height: 35px;
+  width: 35px;
   margin-right: 6%;
-  padding: 10px 10px 10px 10px;
-  border-width: 0 0 0 0;
+  padding: 15px 15px 15px 15px;
   background-size: 100px;
+  margin-top:0px;
 }
 
 #cart:hover {
   background-color: lightgrey;
-  border-radius: 40px;
+  border-radius: 20px;
   background-size: 100px;
+
 }
-#demlogo{
+
+#demlogo {
   text-align: center;
 }
-.dem{
-  color:darkred;
-  font-family:"wingdings";
-  text-align:center;
+
+.dem {
+  color: darkred;
+  font-family: "wingdings";
+  text-align: center;
