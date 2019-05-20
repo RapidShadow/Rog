@@ -5,55 +5,63 @@ $(document).ready(function() {
       image: "images/original.png",
       price: "$8.00",
       status: "sold out",
-
+      text: "A trusable flavor. Good for a day at the office to a walk on the beach."
     },
     blueberry: {
       product: "blueberry",
       image: "images/blueberry.png",
       price: "$8.00",
       status: "sold out",
+      text:" Blueberry RØG tastes like sweet ripe blueberries popping in your mouth similar to your favorite blue candy! "
     },
     strawberry: {
       product: "strawberry",
       image: "images/strawberry.png",
       price: "$8.00",
       status: "sold out",
+      text:"Capturing the essence of one of the most popular fruit flavors on the market, this RØG features sweetened Strawberries."
     },
     orange: {
       product: "orange",
       image: "images/orange.png",
       price: "$8.00",
       status: "sold out",
+      text:"Blast into an ocean of citrusy goodness this summer with the all-new Orange RØG."
     },
     grape: {
       product: "grape",
       image: "images/grape.png",
       price: "$8.00",
       status: "sold out",
+      text:" Grape RØG has arrived with a deliciously fresh purple treat that’ll leave your tastebuds wanting more!"
     },
     fruitPunch: {
       product: "fruit punch",
       image: "images/punch.png",
       price: "$8.00",
       status: "sold out",
+      text:"Fruit Punch contains an unstoppable rush of Fruit flavors that will send your taste buds into a frenzy of satisfaction."
     },
     lemonade: {
       product: "lemonade",
       image: "images/lemonade.png",
       price: "$8.00",
       status: "sold out",
+      text:"Lemonade by RØG delivers a strong summertime favorite that’s both tasty and refreshing"
     },
     welches: {
       product: "welches",
       image: "images/welches.png",
       price: "$8.00",
       status: "sold out",
+      text:"Welches RØG tastes like a familiar childhood memory, bursting with flavor this medley of candy."
     },
     cottonCandy: {
       product: "cotton candy",
       image: "images/candy.png",
       price: "$8.00",
       status: "sold out",
+      text:"Providing flavor unlike any RØG you’ve ever had before is the all-new Cotton Candy RØG"
     },
     sweetMint: {
       product: "sweet mint",
@@ -106,11 +114,15 @@ $(document).ready(function() {
     let newElement = `
     <div id="backdiv">
     <a href="shop.html" id="back">back</a>
-    </div>
-    <div id="content">
+    <div>
+    <div class="text">
     <img src="${products[cardId]["image"]}" class="pImage">
-    <h3 class="pName">${products[cardId]["product"]}</h3>
-    </div>
+    <p class="pName">${products[cardId]["product"]}</p>
+    <p class="desc">${products[cardId]["text"]}  </p>
+    <p class="buy">${products[cardId]["status"]}</p>
+    <div>
+    <hr>
+    <p id="copyright">Copyright © 2019 All Rights Reserved. Trademarked 2019 by RØG.INC ®</p>
 
   `
     $("body").append(newElement);
