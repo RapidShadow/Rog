@@ -164,3 +164,35 @@ h2{
   margin:30px 0 30px 0;
   text-align:center;
 }
+#back {
+  border-style: solid;
+  border-color: black;
+  display:inline-block;
+  padding: 10px 25px;
+  color: black;
+  margin:0 0 0 5%;
+}
+#backdiv{
+  display:block;
+  margin:0 0 0 0;
+}
+.pName{
+  margin-top: 0px;
+  margin-left: 10%;
+  font-family: "Montserrat";
+  font-variant: small-caps;
+  font-size:70px;
+  display:inline;
+
+  vertical-align: top;
+}
+.pImage{
+  margin-top:40px;
+  display:inline;
+  float:left;
+}
+#content{
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
