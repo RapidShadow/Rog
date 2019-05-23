@@ -109,4 +109,9 @@ a {
 #hidden{
   display:none;
   color:darkred;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
 }
