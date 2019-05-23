@@ -12,77 +12,77 @@ $(document).ready(function() {
       image: "images/blueberry.png",
       price: "$8.00",
       status: "sold out",
-      text:" Blueberry RØG tastes like sweet ripe blueberries popping in your mouth similar to your favorite blue candy! "
+      text: " Blueberry RØG tastes like sweet ripe blueberries popping in your mouth similar to your favorite blue candy! "
     },
     strawberry: {
       product: "strawberry",
       image: "images/strawberry.png",
       price: "$8.00",
       status: "sold out",
-      text:"Capturing the essence of one of the most popular fruit flavors on the market, this RØG features sweetened Strawberries."
+      text: "Capturing the essence of one of the most popular fruit flavors on the market, this RØG features sweetened Strawberries."
     },
     orange: {
       product: "orange",
       image: "images/orange.png",
       price: "$8.00",
       status: "sold out",
-      text:"Blast into an ocean of citrusy goodness this summer with the all-new Orange RØG."
+      text: "Blast into an ocean of citrusy goodness this summer with the all-new Orange RØG."
     },
     grape: {
       product: "grape",
       image: "images/grape.png",
       price: "$8.00",
       status: "sold out",
-      text:" Grape RØG has arrived with a deliciously fresh purple treat that’ll leave your tastebuds wanting more!"
+      text: " Grape RØG has arrived with a deliciously fresh purple treat that’ll leave your tastebuds wanting more!"
     },
     fruit: {
       product: "fruit punch",
       image: "images/punch.png",
       price: "$8.00",
       status: "sold out",
-      text:"Fruit Punch contains an unstoppable rush of Fruit flavors that will send your taste buds into a frenzy of satisfaction."
+      text: "Fruit Punch contains an unstoppable rush of Fruit flavors that will send your taste buds into a frenzy of satisfaction."
     },
     lemonade: {
       product: "lemonade",
       image: "images/lemonade.png",
       price: "$8.00",
       status: "sold out",
-      text:"Lemonade by RØG delivers a strong summertime favorite that’s both tasty and refreshing."
+      text: "Lemonade by RØG delivers a strong summertime favorite that’s both tasty and refreshing."
     },
     welches: {
       product: "welches",
       image: "images/welches.png",
       price: "$8.00",
       status: "sold out",
-      text:"Welches RØG tastes like a familiar childhood memory, bursting with flavor this medley of candy."
+      text: "Welches RØG tastes like a familiar childhood memory, bursting with flavor this medley of candy."
     },
     cotton: {
       product: "cotton candy",
       image: "images/candy.png",
       price: "$8.00",
       status: "sold out",
-      text:"Providing flavor unlike any RØG you’ve ever had before is the all-new Cotton Candy RØG."
+      text: "Providing flavor unlike any RØG you’ve ever had before is the all-new Cotton Candy RØG."
     },
     sweet: {
       product: "sweet mint",
       image: "images/mint.png",
       price: "$8.00",
       status: "sold out",
-      text:"Sweet Mint RØG gives a crisp sensation that will remind you of stepping out on a cold winter morning."
+      text: "Sweet Mint RØG gives a crisp sensation that will remind you of stepping out on a cold winter morning."
     },
     mucho: {
       product: "mucho mango",
       image: "images/mango.png",
       price: "$8.00",
       status: "sold out",
-      text:"Sweet, tangy and tropical is the best way to describe this mango flavored RØG."
+      text: "Sweet, tangy and tropical is the best way to describe this mango flavored RØG."
     },
     krispies: {
       product: "krispies tendies",
       image: "images/chicken.png",
       price: "$8.00",
       status: "coming soon",
-      text:" An old American favorite, Fried Chicken RØG will surely satisfy anyone’s craving for rich, tasty food."
+      text: " An old American favorite, Fried Chicken RØG will surely satisfy anyone’s craving for rich, tasty food."
     }
   }
   //loopping the JSon object in the website to load content
@@ -132,6 +132,7 @@ $(document).ready(function() {
   })
 
   let points = 0
+
   $("#logo").click(function() {
     points++;
     console.log(points);
@@ -139,11 +140,12 @@ $(document).ready(function() {
       $("body").empty()
       let newElement = `<embed src="dark.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
     <div id="demlogo">
-    <img src="images/demLogo.png" width="100px" height="100px">
+    <img src="images/demLogo.png" width="100px" height="100px" class="demLogo">
     </div>
     <p class="dem">Smoking kills bro, but im not your mother so do what you want.</p>
-    <div id="demlogo">
-    <img src="images/demon.png">
+    <p id=hidden>Smoking kills bro, but im not your mother so do what you want.</p>
+    <div id="demlogo2">
+    <img src="images/demon.png" id="seal">
     </div>
     `
 
@@ -151,11 +153,15 @@ $(document).ready(function() {
       $("body").css({
         "background-color": "black"
       });
+      $("#seal").click(function() {
+        $(".dem").toggle();
+        $("#hidden").fadeToggle("slow", "linear");
+
+      });
+      $(".demLogo").click(function(){
+        location.reload();
+      })
+
     }
   })
-
-
-
-
-
 })

@@ -147,6 +147,9 @@ hr {
 #demlogo {
   text-align: center;
 }
+#demlogo2 {
+  text-align: center;
+}
 
 .dem {
   color: darkred;
@@ -228,4 +231,8 @@ h2{
   margin:10px 0 0 0%;
   text-align:right;
 
+}
+#hidden{
+  display:none;
+  color:darkred;
 }
