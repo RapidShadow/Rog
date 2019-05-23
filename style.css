@@ -182,12 +182,13 @@ h2{
 }
 .pName{
   margin-top: 0px;
-  margin-left: 10%;
   font-family: "Montserrat";
   font-variant: small-caps;
   font-size:70px;
   text-align: left;
   display:inline;
+  margin-right:10%;
+  margin-left:0;
 
   vertical-align: top;
 }
@@ -196,6 +197,7 @@ h2{
   display:block;
   float: left;
   margin-right:100px;
+  margin-left:8%;
   margin-bottom:50px;
 
 }

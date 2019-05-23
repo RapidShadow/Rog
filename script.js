@@ -35,7 +35,7 @@ $(document).ready(function() {
       status: "sold out",
       text:" Grape RØG has arrived with a deliciously fresh purple treat that’ll leave your tastebuds wanting more!"
     },
-    fruitPunch: {
+    fruit: {
       product: "fruit punch",
       image: "images/punch.png",
       price: "$8.00",
@@ -47,7 +47,7 @@ $(document).ready(function() {
       image: "images/lemonade.png",
       price: "$8.00",
       status: "sold out",
-      text:"Lemonade by RØG delivers a strong summertime favorite that’s both tasty and refreshing"
+      text:"Lemonade by RØG delivers a strong summertime favorite that’s both tasty and refreshing."
     },
     welches: {
       product: "welches",
@@ -56,36 +56,39 @@ $(document).ready(function() {
       status: "sold out",
       text:"Welches RØG tastes like a familiar childhood memory, bursting with flavor this medley of candy."
     },
-    cottonCandy: {
+    cotton: {
       product: "cotton candy",
       image: "images/candy.png",
       price: "$8.00",
       status: "sold out",
-      text:"Providing flavor unlike any RØG you’ve ever had before is the all-new Cotton Candy RØG"
+      text:"Providing flavor unlike any RØG you’ve ever had before is the all-new Cotton Candy RØG."
     },
-    sweetMint: {
+    sweet: {
       product: "sweet mint",
       image: "images/mint.png",
       price: "$8.00",
       status: "sold out",
+      text:"Sweet Mint RØG gives a crisp sensation that will remind you of stepping out on a cold winter morning."
     },
-    muchoMango: {
+    mucho: {
       product: "mucho mango",
       image: "images/mango.png",
       price: "$8.00",
       status: "sold out",
+      text:"Sweet, tangy and tropical is the best way to describe this mango flavored RØG."
     },
-    krispiesTendies: {
+    krispies: {
       product: "krispies tendies",
       image: "images/chicken.png",
       price: "$8.00",
       status: "coming soon",
+      text:" An old American favorite, Fried Chicken RØG will surely satisfy anyone’s craving for rich, tasty food."
     }
   }
   //loopping the JSon object in the website to load content
   for (let key in products) {
     let mContent = `
-    <div class="card" id="${products[key]["product"]}">
+    <div class="card" id="${key}">
   <p class="stuff">${products[key]["product"]}</p>
   <img src=${products[key]["image"]} class="poster" >
   <p class="stuff">${products[key]["price"]}<p>
